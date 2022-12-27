@@ -38,8 +38,7 @@ print(prices)
 print(dates)
 print(time.time()-start)
 
-#data_titles= ["Time", "{} Stock Price".format(index)]
-#data = list(zip(dates, prices))
+#data storage using pandas
 data= { 'Time': dates, '{} Stock Price'.format(index):prices}
 df= pd.DataFrame(data)
 print(df)
